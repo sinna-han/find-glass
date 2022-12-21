@@ -54,6 +54,9 @@ export default function NavWrap() {
                   >
                     회원가입
                   </Button>
+                  <Link to='/mypage' className='button btnFade bgPurple ms-1'>
+                    마이페이지
+                  </Link>
                 </div>
                 <Nav className='headerNav'>
                   <Nav.Link href='Company' className='links'>
