@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import mainImg from "../img/main_v.jpg";
 
 export default function Home() {
@@ -20,9 +21,9 @@ export default function Home() {
           '유리찾자'
         </h1>
         <p>The destination for leaders who seek to change the world</p>
-        <a href='/' className='button btnFade bgBlack'>
+        <Link to='/company' className='button btnFade bgBlack'>
           자세히 보기
-        </a>
+        </Link>
       </div>
     </main>
   );
