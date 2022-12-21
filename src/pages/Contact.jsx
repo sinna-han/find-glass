@@ -1,6 +1,7 @@
 import React from "react";
 import SubTitle from "../components/SubTitle";
 import { MdEmail, MdLocationOn, MdContactPhone } from "react-icons/md";
+import Map from "../components/Map";
 
 export default function Contact() {
   return (
@@ -31,6 +32,7 @@ export default function Contact() {
                   <h4>Call:</h4>
                   <p>031-546-3694</p>
                 </div>
+                <Map />
               </div>
             </div>
 
