@@ -33,17 +33,17 @@ export default function Search() {
           </p>
           <ul className='nav justify-content-end nav_vr'>
             <li className='nav-item'>
-              <a className='nav-link active' aria-current='page' href='#'>
+              <a className='nav-link active' aria-current='page' href='#!'>
                 최신등록순
               </a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>
+              <a className='nav-link' href='#!'>
                 낮은가격순
               </a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>
+              <a className='nav-link' href='#!'>
                 거리순
               </a>
             </li>
@@ -52,22 +52,22 @@ export default function Search() {
 
         <div className='list-group w-auto search_list'>
           <ListSearch
-            imgUrl={brandLogo1}
-            imgName='현대자동차'
+            brandImgUrl={brandLogo1}
+            brandName='현대자동차'
             carExp='YF 쏘나타 전면유리-쏠라/열선/습기/하이패스'
             carName='서울/현대/쏘나타'
             price='100,000'
           />
           <ListSearch
-            imgUrl={brandLogo2}
-            imgName='삼성르노자동차'
+            brandImgUrl={brandLogo2}
+            brandName='삼성르노자동차'
             carExp='YF 쏘나타 전면유리-쏠라/열선/습기/하이패스1'
             carName='서울/현대/쏘나타2'
             price='120,000'
           />
           <ListSearch
-            imgUrl={brandLogo3}
-            imgName='기아자동차'
+            brandImgUrl={brandLogo3}
+            brandName='기아자동차'
             carExp='YF 쏘나타 전면유리-쏠라/열선/습기/하이패스2'
             carName='서울/현대/쏘나타3'
             price='130,000'
@@ -75,36 +75,36 @@ export default function Search() {
         </div>
 
         <div className='text-center search_zero align-middle'>
-          <img src={noProduct} />
+          <img src={noProduct} alt='유리찾자' />
           <p>아쉽게도 판매중인 재고가 없습니다.</p>
         </div>
 
         <nav className='m-4'>
           <ul className='pagination justify-content-center'>
             <li className='page-item'>
-              <a className='page-link' href='#' aria-label='Previous'>
+              <a className='page-link' href='#!' aria-label='Previous'>
                 <span aria-hidden='true'>
                   <GrFormPrevious />
                 </span>
               </a>
             </li>
             <li className='page-item'>
-              <a className='page-link' href='#'>
+              <a className='page-link' href='#!'>
                 1
               </a>
             </li>
             <li className='page-item'>
-              <a className='page-link' href='#'>
+              <a className='page-link' href='#!'>
                 2
               </a>
             </li>
             <li className='page-item'>
-              <a className='page-link' href='#'>
+              <a className='page-link' href='#!'>
                 3
               </a>
             </li>
             <li className='page-item'>
-              <a className='page-link' href='#' aria-label='Next'>
+              <a className='page-link' href='#!' aria-label='Next'>
                 <span aria-hidden='true'>
                   <GrFormNext />
                 </span>

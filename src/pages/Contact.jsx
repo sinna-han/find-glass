@@ -37,7 +37,7 @@ export default function Contact() {
             </div>
 
             <div className='col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch'>
-              <form action='' method='post' role='form' className='email-form'>
+              <form className='email-form'>
                 <div className='row'>
                   <div className='form-group col-md-6'>
                     <label for='name'>이름</label>

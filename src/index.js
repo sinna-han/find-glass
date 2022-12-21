@@ -12,6 +12,8 @@ import Cooperation from "./pages/Cooperation";
 import Enrolment from "./pages/Enrolment";
 import Order from "./pages/Order";
 import Search from "./pages/Search";
+import Cart from "./pages/Cart";
+import MyPage from "./pages/MyPage";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,8 @@ const router = createBrowserRouter([
       { path: "/enrolment", element: <Enrolment /> },
       { path: "/order", element: <Order /> },
       { path: "/search", element: <Search /> },
+      { path: "/cart", element: <Cart /> },
+      { path: "/mypage", element: <MyPage /> },
     ],
   },
 ]);
