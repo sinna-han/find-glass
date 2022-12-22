@@ -14,7 +14,7 @@ export default function OrderView() {
         title='주문 상세 내역'
         exp='주문하신 상품정보에 대한 상세 내역입니다.'
       />
-      <div className='container mx-auto my-5 order_div'>
+      <div className='container mx-auto my-4 my-md-5 order_div'>
         <div className='d-flex justify-content-between"'>
           <div className='flex-shrink-1 point_txt_s'>
             주문번호 : 2022122016411898{" "}
@@ -71,7 +71,7 @@ export default function OrderView() {
             </tbody>
           </table>
         </div>
-        <div className='mt-5 order_info'>
+        <div className='mt-4 mt-md-5 order_info'>
           <div>
             <h4 className='underLine'>
               <BsPersonCircle className='me-2' />
@@ -122,7 +122,7 @@ export default function OrderView() {
               </table>
             </div>
           </div>
-          <h4 className='underLine mt-5'>
+          <h4 className='underLine mt-4 mt-md-5'>
             <FaCreditCard className='me-2' />
             결제정보
           </h4>
@@ -149,7 +149,10 @@ export default function OrderView() {
             </table>
           </div>
           <div className='text-center'>
-            <Button type='submit' className=' btn btn-lg bgPurple2 my-5'>
+            <Button
+              type='submit'
+              className=' btn btn-md-lg bgPurple2 my-3 my-md-5'
+            >
               주문취소하기
             </Button>
           </div>

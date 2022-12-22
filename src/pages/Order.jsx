@@ -11,12 +11,12 @@ export default function Order() {
         title='주문하기'
         exp='주문하고자 하시는 상품정보가 맞는지 확인하시고 주문을 진행하세요.'
       />
-      <div className='container mx-auto my-5 order_div'>
+      <div className='container mx-auto my-md-5 order_div'>
         <div className='table-responsive-md'>
-          <table className='table align-middle table-hover mt-5 text-center order_table'>
+          <table className='table align-middle table-hover mt-3 mt-md-5 text-center order_table'>
             <colgroup>
               <col width='' />
-              <col width='5%' />
+              <col width='10%' />
               <col width='14%' />
               <col width='14%' />
             </colgroup>
@@ -45,7 +45,7 @@ export default function Order() {
             </tbody>
           </table>
         </div>
-        <div className='mt-5 order_info'>
+        <div className='mt-4 mt-md-5 order_info'>
           <div>
             <h4 className='underLine'>
               <BsPersonCircle className='me-2' />
@@ -109,7 +109,7 @@ export default function Order() {
               </table>
             </div>
           </div>
-          <h4 className='underLine mt-5'>
+          <h4 className='underLine mt-4 mt-md-5'>
             <FaCreditCard className='me-2' />
             결제정보
           </h4>
