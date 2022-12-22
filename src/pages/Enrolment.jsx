@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SubTitle from "../components/SubTitle";
-import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -66,9 +66,9 @@ export default function Enrolment() {
             </Form.Group>
           </Row>
           <div className='text-center mt-5'>
-            <Button type='submit' className='w-25 btn btn-lg bgPurple2'>
+            <Link to='/mypage' className=' btn btn-lg bgPurple2'>
               등록하기
-            </Button>
+            </Link>
           </div>
         </Form>
       </div>

@@ -415,6 +415,24 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 24px;
+  }
+  h4 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 16px;
+  }
   .search_list img {
     display: none;
   }
@@ -425,7 +443,7 @@ footer {
     padding-left: 0;
   }
   .navbar {
-    padding: 16px 32px;
+    padding: 16px 8px;
   }
 
   .bgPurple {
@@ -488,6 +506,11 @@ footer {
     align-items: flex-start;
     background: none;
   }
+  .ft_logoBox img,
+  .ft_infoBox h3,
+  .ft_infoBox p {
+    opacity: 0.7;
+  }
   .ft_logoBox,
   .ft_infoBox {
     width: 80%;
@@ -497,9 +520,6 @@ footer {
   .ft_logoBox a {
     display: none;
   }
-  h3 {
-    font-size: 18px;
-  }
   .bgBlack {
     margin-top: 0;
     padding: 8px 16px;
@@ -507,6 +527,18 @@ footer {
     font-size: 14px;
   }
   .testimonials {
+    display: none;
+  }
+  .min-w100 {
+    min-width: 78px;
+  }
+  .price_txt {
+    font-size: 16px;
+  }
+  .cart_btns {
+    min-width: 200px;
+  }
+  .nav_vr {
     display: none;
   }
 }
@@ -583,7 +615,7 @@ footer {
   position: relative;
 }
 .search_bar input {
-  padding: 16px 60px;
+  padding: 16px 16px 16px 60px;
   border-radius: 30px;
   font-size: 18px;
 }
@@ -950,7 +982,14 @@ footer {
   font-size: 36px;
   font-weight: 600;
 }
+.order_table,
+.cart_table,
+.order_view_table {
+  min-width: 780px;
+}
 @media screen and (max-width: 992px) {
+  .order_table img,
+  .order_view_table img,
   .glass_order .order_img {
     display: none;
   }

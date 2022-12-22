@@ -15,43 +15,44 @@ export default function MyPage() {
           <FaCreditCard className='me-2' />
           판매 등록한 유리
         </h4>
-        <table className='table align-middle table-hover text-center order_table'>
-          <colgroup>
-            <col width='' />
-            <col width='15%' />
-            <col width='20%' />
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope='col'>상품정보</th>
-              <th scope='col'>수량</th>
-              <th scope='col'>판매가격</th>
-            </tr>
-          </thead>
-          <tbody className='table-group-divider'>
-            <tr>
-              <td>
-                <img
-                  src={brandLogo1}
-                  alt='현대자동차'
-                  className='img-thumbnail p-3 order_img me-3'
-                />
-                YF 쏘나타 전면유리-쏠라/열선/습기/하이패스
-              </td>
-              <td>1</td>
-              <td>100,000원</td>
-            </tr>
-          </tbody>
-        </table>
-
+        <div class='table-responsive-md'>
+          <table className='table align-middle table-hover text-center order_table'>
+            <colgroup>
+              <col width='' />
+              <col width='15%' />
+              <col width='20%' />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope='col'>상품정보</th>
+                <th scope='col'>수량</th>
+                <th scope='col'>판매가격</th>
+              </tr>
+            </thead>
+            <tbody className='table-group-divider'>
+              <tr>
+                <td>
+                  <img
+                    src={brandLogo1}
+                    alt='현대자동차'
+                    className='img-thumbnail p-3 order_img me-3'
+                  />
+                  YF 쏘나타 전면유리-쏠라/열선/습기/하이패스
+                </td>
+                <td>1</td>
+                <td>100,000원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <h4 className='underLine py-4 mt-5'>
           <FaCreditCard className='me-2' />
           판매내역조회
         </h4>
         <table className='table align-middle table-hover text-center order_table'>
           <colgroup>
-            <col width='20%' />
-            <col width='20%' />
+            <col width='25%' />
+            <col width='25%' />
             <col width='' />
             <col width='20%' />
             <col width='20%' />

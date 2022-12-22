@@ -17,7 +17,7 @@ export default function Cart() {
           <colgroup>
             <col width='6%' />
             <col width='' />
-            <col width='12%' />
+            <col width='18%' />
             <col width='18%' />
           </colgroup>
           <thead>
@@ -53,8 +53,8 @@ export default function Cart() {
             />
           </tbody>
         </table>
-        <div className='d-flex align-items-center justify-content-between m-1'>
-          <div>
+        <div className='d-flex align-items-center justify-content-between m-md-1'>
+          <div className='cart_btns'>
             <Button variant='outline-secondary' className='me-1'>
               선택삭제
             </Button>

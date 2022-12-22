@@ -52,7 +52,7 @@ export default function Order() {
             <div className='bg-light p-4'>
               <table className='table align-middle tableTrpad'>
                 <colgroup>
-                  <col width='10%' />
+                  <col width='20%' />
                   <col width='' />
                 </colgroup>
                 <tr>
@@ -114,7 +114,7 @@ export default function Order() {
           <div className='bg-light p-4'>
             <table className='table align-middle'>
               <colgroup>
-                <col width='10%' />
+                <col width='20%' />
                 <col width='' />
               </colgroup>
               <tr>
@@ -138,7 +138,7 @@ export default function Order() {
               </tr>
             </table>
           </div>
-          <div class='mx-auto d-grid col-3'>
+          <div className='text-center'>
             <Link to='/orderView' className=' btn btn-lg bgPurple2 my-5'>
               주문하기
             </Link>

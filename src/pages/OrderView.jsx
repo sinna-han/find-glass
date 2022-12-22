@@ -16,10 +16,10 @@ export default function OrderView() {
       />
       <div className='container mx-auto my-5 order_div'>
         <div className='d-flex justify-content-between"'>
-          <div className='flex-fill point_txt_s'>
+          <div className='flex-shrink-1 point_txt_s'>
             주문번호 : 2022122016411898{" "}
           </div>
-          <div className='flex-fill text-end'>
+          <div className='w-100 text-end'>
             <Button
               onClick={() => setOpen(!open)}
               aria-controls='example-collapse-text'
@@ -38,7 +38,7 @@ export default function OrderView() {
         <table className='table align-middle table-hover mt-3 text-center order_view_table'>
           <colgroup>
             <col width='' />
-            <col width='5%' />
+            <col width='8%' />
             <col width='14%' />
             <col width='14%' />
             <col width='14%' />
@@ -79,7 +79,7 @@ export default function OrderView() {
             <div className='bg-light'>
               <table className='table align-middle tableTrpad'>
                 <colgroup>
-                  <col width='10%' />
+                  <col width='30%' />
                   <col width='' />
                 </colgroup>
                 <tr>
@@ -128,7 +128,7 @@ export default function OrderView() {
           <div className='bg-light p-4'>
             <table className='table align-middle tableTrpad'>
               <colgroup>
-                <col width='10%' />
+                <col width='30%' />
                 <col width='' />
               </colgroup>
               <tr>
@@ -147,7 +147,7 @@ export default function OrderView() {
               </tr>
             </table>
           </div>
-          <div class='mx-auto d-grid col-3'>
+          <div className='text-center'>
             <Button type='submit' className=' btn btn-lg bgPurple2 my-5'>
               주문취소하기
             </Button>

@@ -19,7 +19,7 @@ export default function Search() {
       />
       <div className='container-xl mx-auto my-5'>
         <SearchBar />
-        <div className='container-xl mx-auto my-4 bg-light p-5'>
+        <div className='container-xl mx-auto my-4 bg-light p-4 p-md-5'>
           <Form className='needs-validation' novalidate>
             <div className='row g-3'>
               <SelectGroup />

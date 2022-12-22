@@ -5,7 +5,7 @@ import { BsSearch } from "react-icons/bs";
 export default function SearchBar() {
   return (
     <div className='row justify-content-center'>
-      <div className='col-8'>
+      <div className='col-10 col-md-8'>
         <Form className='search_bar'>
           <input
             type='text'

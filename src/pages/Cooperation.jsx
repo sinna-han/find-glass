@@ -76,8 +76,8 @@ export default function Cooperation() {
       <section className='container mx-auto my-5 text-center'>
         <table className='table table-striped table-hover mt-5'>
           <colgroup>
-            <col width='6%' />
-            <col width='12%' />
+            <col width='16%' />
+            <col width='16%' />
             <col width='28%' />
             <col width='' />
           </colgroup>
