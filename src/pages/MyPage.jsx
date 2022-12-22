@@ -49,79 +49,82 @@ export default function MyPage() {
           <FaCreditCard className='me-2' />
           판매내역조회
         </h4>
-        <table className='table align-middle table-hover text-center order_table'>
-          <colgroup>
-            <col width='25%' />
-            <col width='25%' />
-            <col width='' />
-            <col width='20%' />
-            <col width='20%' />
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope='col'>주문서번호</th>
-              <th scope='col'>판매일시</th>
-              <th scope='col'>상품수</th>
-              <th scope='col'>판매금액</th>
-              <th scope='col'>상태</th>
-            </tr>
-          </thead>
-          <tbody className='table-group-divider'>
-            <tr>
-              <td>2022122016411898</td>
-              <td>22-12-20 16:41 (화)</td>
-              <td>1</td>
-              <td>686,000,000원</td>
-              <td>입금확인중</td>
-            </tr>
-            <tr>
-              <td>2022122016411898</td>
-              <td>22-12-20 16:41 (화)</td>
-              <td>1</td>
-              <td>686,000,000원</td>
-              <td>입금확인</td>
-            </tr>
-          </tbody>
-        </table>
-
+        <div class='table-responsive-md'>
+          <table className='table align-middle table-hover text-center order_table'>
+            <colgroup>
+              <col width='25%' />
+              <col width='25%' />
+              <col width='' />
+              <col width='20%' />
+              <col width='20%' />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope='col'>주문서번호</th>
+                <th scope='col'>판매일시</th>
+                <th scope='col'>상품수</th>
+                <th scope='col'>판매금액</th>
+                <th scope='col'>상태</th>
+              </tr>
+            </thead>
+            <tbody className='table-group-divider'>
+              <tr>
+                <td>2022122016411898</td>
+                <td>22-12-20 16:41 (화)</td>
+                <td>1</td>
+                <td>686,000,000원</td>
+                <td>입금확인중</td>
+              </tr>
+              <tr>
+                <td>2022122016411898</td>
+                <td>22-12-20 16:41 (화)</td>
+                <td>1</td>
+                <td>686,000,000원</td>
+                <td>입금확인</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <h4 className='underLine py-4 mt-5'>
           <FaCreditCard className='me-2' />
           주문내역조회
         </h4>
-        <table className='table align-middle table-hover text-center order_table  mb-5'>
-          <colgroup>
-            <col width='20%' />
-            <col width='20%' />
-            <col width='' />
-            <col width='20%' />
-            <col width='20%' />
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope='col'>주문서번호</th>
-              <th scope='col'>주문일시</th>
-              <th scope='col'>상품수</th>
-              <th scope='col'>주문금액</th>
-              <th scope='col'>상태</th>
-            </tr>
-          </thead>
-          <tbody className='table-group-divider'>
-            <tr>
-              <td>2022122016411898</td>
-              <td>22-12-20 16:41 (화)</td>
-              <td>1</td>
-              <td>686,000,000원</td>
-              <td>입금확인중</td>
-            </tr>
-            <tr>
-              <td>2022122016411898</td>
-              <td>22-12-20 16:41 (화)</td>
-              <td>1</td>
-              <td>686,000,000원</td>
-              <td>입금확인</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class='table-responsive-md'>
+          <table className='table align-middle table-hover text-center order_table  mb-5'>
+            <colgroup>
+              <col width='20%' />
+              <col width='20%' />
+              <col width='' />
+              <col width='20%' />
+              <col width='20%' />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope='col'>주문서번호</th>
+                <th scope='col'>주문일시</th>
+                <th scope='col'>상품수</th>
+                <th scope='col'>주문금액</th>
+                <th scope='col'>상태</th>
+              </tr>
+            </thead>
+            <tbody className='table-group-divider'>
+              <tr>
+                <td>2022122016411898</td>
+                <td>22-12-20 16:41 (화)</td>
+                <td>1</td>
+                <td>686,000,000원</td>
+                <td>입금확인중</td>
+              </tr>
+              <tr>
+                <td>2022122016411898</td>
+                <td>22-12-20 16:41 (화)</td>
+                <td>1</td>
+                <td>686,000,000원</td>
+                <td>입금확인</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </>
   );

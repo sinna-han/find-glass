@@ -12,44 +12,46 @@ export default function Order() {
         exp='주문하고자 하시는 상품정보가 맞는지 확인하시고 주문을 진행하세요.'
       />
       <div className='container mx-auto my-5 order_div'>
-        <table className='table align-middle table-hover mt-5 text-center order_table'>
-          <colgroup>
-            <col width='' />
-            <col width='5%' />
-            <col width='14%' />
-            <col width='14%' />
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope='col'>상품정보</th>
-              <th scope='col'>수량</th>
-              <th scope='col'>판매가격</th>
-              <th scope='col'>총구매금액</th>
-            </tr>
-          </thead>
-          <tbody className='table-group-divider'>
-            <tr>
-              <td>
-                <img
-                  src={brandLogo1}
-                  alt='현대자동차'
-                  className='img-thumbnail p-3 order_img me-3'
-                />
-                YF 쏘나타 전면유리-쏠라/열선/습기/하이패스
-              </td>
-              <td>1</td>
-              <td>100,000원</td>
-              <td>100,000원</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className='table-responsive-md'>
+          <table className='table align-middle table-hover mt-5 text-center order_table'>
+            <colgroup>
+              <col width='' />
+              <col width='5%' />
+              <col width='14%' />
+              <col width='14%' />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope='col'>상품정보</th>
+                <th scope='col'>수량</th>
+                <th scope='col'>판매가격</th>
+                <th scope='col'>총구매금액</th>
+              </tr>
+            </thead>
+            <tbody className='table-group-divider'>
+              <tr>
+                <td>
+                  <img
+                    src={brandLogo1}
+                    alt='현대자동차'
+                    className='img-thumbnail p-3 order_img me-3'
+                  />
+                  YF 쏘나타 전면유리-쏠라/열선/습기/하이패스
+                </td>
+                <td>1</td>
+                <td>100,000원</td>
+                <td>100,000원</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div className='mt-5 order_info'>
           <div>
             <h4 className='underLine'>
               <BsPersonCircle className='me-2' />
               주문자 정보
             </h4>
-            <div className='bg-light p-4'>
+            <div className='table-responsive-md bg-light p-4'>
               <table className='table align-middle tableTrpad'>
                 <colgroup>
                   <col width='20%' />
@@ -111,7 +113,7 @@ export default function Order() {
             <FaCreditCard className='me-2' />
             결제정보
           </h4>
-          <div className='bg-light p-4'>
+          <div className='table-responsive-md bg-light p-4'>
             <table className='table align-middle'>
               <colgroup>
                 <col width='20%' />
