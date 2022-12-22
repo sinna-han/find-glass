@@ -220,6 +220,7 @@ h4 {
 .bgBlack:hover {
   background: var(--text-color);
   border: 1px solid var(--text-color);
+  color: #fff;
 }
 .bgBlack {
   border: 1px #ffffff solid;
@@ -235,7 +236,7 @@ header {
   background-color: var(--background-color);
 }
 .logo {
-  margin-left: 40px;
+  padding-left: 40px;
 }
 
 .headerNav .links {
@@ -287,7 +288,7 @@ main {
 }
 .main_txt {
   position: absolute;
-  top: 25%;
+  top: 15%;
   left: 10%;
 }
 .main_txt h1 {
@@ -419,7 +420,7 @@ footer {
     height: 72px;
   }
   .logo {
-    margin-left: 0;
+    padding-left: 0;
   }
   .navbar {
     padding: 16px 32px;
@@ -447,7 +448,7 @@ footer {
   }
 
   .main_v_bg img {
-    width: 768px;
+    max-width: 768px;
     height: auto;
     object-fit: cover;
   }
@@ -490,6 +491,15 @@ footer {
   }
   h3 {
     font-size: 18px;
+  }
+  .bgBlack {
+    margin-top: 0;
+    padding: 8px 16px;
+    line-height: 26px;
+    font-size: 14px;
+  }
+  .testimonials {
+    display: none;
   }
 }
 
@@ -593,6 +603,10 @@ footer {
 }
 .point_txt {
   font-size: 20px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.point_txt_s {
   font-weight: 400;
   color: var(--text-color);
 }
@@ -820,7 +834,7 @@ footer {
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px;
-  margin: 40px 30px;
+  margin: 40px 0px;
   background: var(--background-color);
   min-height: 320px;
   display: flex;
@@ -893,7 +907,7 @@ footer {
   }
 
   .testimonials .testimonial-item {
-    margin: 40px 20px;
+    margin: 40px 0px;
   }
 }
 
@@ -934,8 +948,15 @@ footer {
   }
 }
 .order_table td,
+.order_view_table td,
 .cart_table td {
   padding: 20px 0;
+}
+.txt-indigo {
+  color: #a370f7 !important;
+}
+.order_view_table {
+  border-top: 1px solid #111111;
 }
 .order_info h4 {
   padding: 10px 0 20px;

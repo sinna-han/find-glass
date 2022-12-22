@@ -1,21 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
 import SubTitle from "../components/SubTitle";
 import brandLogo1 from "../img/hyundai_logo.png";
 import { BsPersonCircle } from "react-icons/bs";
 import { FaCreditCard } from "react-icons/fa";
-import { Link } from "react-router-dom";
-export default function Order() {
+import Collapse from "react-bootstrap/Collapse";
+
+export default function OrderView() {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <SubTitle
-        title='주문하기'
-        exp='주문하고자 하시는 상품정보가 맞는지 확인하시고 주문을 진행하세요.'
+        title='주문 상세 내역'
+        exp='주문하신 상품정보에 대한 상세 내역입니다.'
       />
       <div className='container mx-auto my-5 order_div'>
-        <table className='table align-middle table-hover mt-5 text-center order_table'>
+        <div className='d-flex justify-content-between"'>
+          <div className='flex-fill point_txt_s'>
+            주문번호 : 2022122016411898{" "}
+          </div>
+          <div className='flex-fill text-end'>
+            <Button
+              onClick={() => setOpen(!open)}
+              aria-controls='example-collapse-text'
+              aria-expanded={open}
+              variant='outline-secondary'
+            >
+              상태 프로세스
+            </Button>
+            <Collapse in={open}>
+              <div id='example-collapse-text' className='pt-2'>
+                주문 > 입금 > 준비 > 배송 > 완료
+              </div>
+            </Collapse>
+          </div>
+        </div>
+        <table className='table align-middle table-hover mt-3 text-center order_view_table'>
           <colgroup>
             <col width='' />
             <col width='5%' />
+            <col width='14%' />
             <col width='14%' />
             <col width='14%' />
           </colgroup>
@@ -25,6 +49,7 @@ export default function Order() {
               <th scope='col'>수량</th>
               <th scope='col'>판매가격</th>
               <th scope='col'>총구매금액</th>
+              <th scope='col'>상태</th>
             </tr>
           </thead>
           <tbody className='table-group-divider'>
@@ -40,16 +65,18 @@ export default function Order() {
               <td>1</td>
               <td>100,000원</td>
               <td>100,000원</td>
+              <td>주문</td>
             </tr>
           </tbody>
         </table>
+
         <div className='mt-5 order_info'>
           <div>
             <h4 className='underLine'>
               <BsPersonCircle className='me-2' />
               주문자 정보
             </h4>
-            <div className='bg-light p-4'>
+            <div className='bg-light'>
               <table className='table align-middle tableTrpad'>
                 <colgroup>
                   <col width='10%' />
@@ -59,9 +86,11 @@ export default function Order() {
                   <th>이름</th>
                   <td>
                     <input
-                      className='form-control form-control-lg'
                       type='text'
-                      placeholder='이름을 입력해주세요'
+                      readonly
+                      class='form-control-plaintext'
+                      id='staticName'
+                      value='홍길동'
                     />
                   </td>
                 </tr>
@@ -69,38 +98,23 @@ export default function Order() {
                   <th>연락처</th>
                   <td>
                     <input
-                      className='form-control form-control-lg'
                       type='text'
-                      placeholder='예:01012345667'
+                      readonly
+                      class='form-control-plaintext'
+                      id='staticPhone'
+                      value='010-1231-4567'
                     />
                   </td>
                 </tr>
                 <tr>
                   <th>주소</th>
                   <td>
-                    <div className='input-group mb-1'>
-                      <input
-                        type='text'
-                        className='form-control form-control-lg'
-                        placeholder='우편번호를 검색하세요.'
-                      />
-                      <button type='submit' className='btn btn-secondary'>
-                        우편번호
-                      </button>
-                    </div>
-
                     <input
                       type='text'
-                      className='form-control mb-1'
-                      id='address'
-                      placeholder='우편번호 입력 후 자동입력 됩니다.'
-                      required
-                    />
-                    <input
-                      type='text'
-                      className='form-control mb-1'
-                      id='address2'
-                      placeholder='건물, 아파트, 동/호수 입력'
+                      readonly
+                      class='form-control-plaintext'
+                      id='staticPhone'
+                      value='(18322) 경기도 화성시 봉담읍 주석로 1166-3 '
                     />
                   </td>
                 </tr>
@@ -112,36 +126,31 @@ export default function Order() {
             결제정보
           </h4>
           <div className='bg-light p-4'>
-            <table className='table align-middle'>
+            <table className='table align-middle tableTrpad'>
               <colgroup>
                 <col width='10%' />
                 <col width='' />
               </colgroup>
               <tr>
+                <th>주문일시</th>
+                <td>2022-12-20 16:41:33</td>
+              </tr>
+              <tr>
                 <th>결제수단</th>
+                <td>무통장입금 농협 317-0025-7875-41 (주)에스에이시스템</td>
+              </tr>
+              <tr>
+                <th>결제금액</th>
                 <td>
-                  <div className='form-check form-check-inline'>
-                    <input
-                      className='form-check-input'
-                      type='radio'
-                      name='inlineRadioOptions'
-                      id='inlineRadio1'
-                      value='option1'
-                    />
-                    <label className='form-check-label' for='inlineRadio1'>
-                      무통장입금
-                    </label>
-                  </div>
-                  <br />
-                  농협 317-0025-7875-41 (주)에스에이시스템
+                  아직 입금되지 않았거나 입금정보를 입력하지 못하였습니다.
                 </td>
               </tr>
             </table>
           </div>
           <div class='mx-auto d-grid col-3'>
-            <Link to='/orderView' className=' btn btn-lg bgPurple2 my-5'>
-              주문하기
-            </Link>
+            <Button type='submit' className=' btn btn-lg bgPurple2 my-5'>
+              주문취소하기
+            </Button>
           </div>
         </div>
       </div>

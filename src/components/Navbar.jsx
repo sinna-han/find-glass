@@ -15,7 +15,7 @@ export default function NavWrap() {
 
   return (
     <header>
-      <Navbar key='md' bg='dark' expand='md' className='mb-3'>
+      <Navbar key='md' bg='dark' variant='dark' expand='md' className='mb-3'>
         <Container fluid>
           <div className='logo'>
             <Link to='/'>

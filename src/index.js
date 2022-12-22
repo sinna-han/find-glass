@@ -14,6 +14,7 @@ import Order from "./pages/Order";
 import Search from "./pages/Search";
 import Cart from "./pages/Cart";
 import MyPage from "./pages/MyPage";
+import OrderView from "./pages/OrderView";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
       { path: "/search", element: <Search /> },
       { path: "/cart", element: <Cart /> },
       { path: "/mypage", element: <MyPage /> },
+      { path: "/orderView", element: <OrderView /> },
     ],
   },
 ]);
