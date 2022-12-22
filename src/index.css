@@ -5,7 +5,7 @@ code {
 
 body {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   position: relative;
   font-weight: 100;
   margin: 0;
