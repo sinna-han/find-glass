@@ -5,7 +5,7 @@ code {
 
 body {
   width: 100%;
-  overflow-x: hidden !important;
+  overflow-x: hidden !;
   position: relative;
   font-weight: 100;
   margin: 0;
@@ -372,7 +372,7 @@ footer {
 }
 .ft_logoBox,
 .ft_infoBox {
-  width: 480px;
+  width: 30%;
   padding-left: 40px;
   animation-name: ftAni;
   animation-duration: 1s;
@@ -450,7 +450,7 @@ footer {
   }
 
   .main_v_bg img {
-    max-width: 768px;
+    max-width: 480px;
     height: auto;
     object-fit: cover;
   }
@@ -487,6 +487,11 @@ footer {
     align-items: flex-start;
     background: none;
   }
+  .ft_logoBox,
+  .ft_infoBox {
+    width: 80%;
+  }
+
   .ft_logoBox h3,
   .ft_logoBox a {
     display: none;
