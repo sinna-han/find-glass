@@ -5,7 +5,7 @@ code {
 
 body {
   width: 100%;
-  overflow-x: hidden !;
+  overflow-x: hidden;
   position: relative;
   font-weight: 100;
   margin: 0;
@@ -450,8 +450,9 @@ footer {
   }
 
   .main_v_bg img {
-    max-width: 480px;
-    height: auto;
+    width: 50%;
+    min-width: 480px;
+    height: 50vh;
     object-fit: cover;
   }
 
