@@ -12,9 +12,9 @@ export default function Cart() {
         exp='구매를 원하시는 상품을 선택 후 주문을 진행하실 수 있습니다.'
       />
 
-      <div className='container mx-auto my-5 text-center'>
+      <div className='container mx-auto mb-4 my-md-5 text-center'>
         <div class='table-responsive-md'>
-          <table className='table align-middle table-hover mt-5 cart_table'>
+          <table className='table align-middle table-hover mt-4 mt-md-5 cart_table'>
             <colgroup>
               <col width='6%' />
               <col width='' />
@@ -56,7 +56,7 @@ export default function Cart() {
           </table>
         </div>
         <div className='d-flex align-items-center justify-content-between m-md-1'>
-          <div className='cart_btns'>
+          <div className='cart_btns mt-3'>
             <Button variant='outline-secondary' className='me-1'>
               선택삭제
             </Button>

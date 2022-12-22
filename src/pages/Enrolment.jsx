@@ -66,7 +66,7 @@ export default function Enrolment() {
             </Form.Group>
           </Row>
           <div className='text-center mt-5'>
-            <Link to='/mypage' className=' btn btn-lg bgPurple2'>
+            <Link to='/mypage' className=' btn btn-md-lg bgPurple2'>
               등록하기
             </Link>
           </div>

@@ -10,7 +10,7 @@ export default function MyPage() {
         title='마이페이지'
         exp='회원가입 정보와 주문이력을 확인 합니다.'
       />
-      <div className='container mx-auto my-5 order_div'>
+      <div className='container mx-auto mt-3 mb-5 my-md-5 order_div'>
         <h4 className='underLine py-4'>
           <FaCreditCard className='me-2' />
           판매 등록한 유리
@@ -45,7 +45,7 @@ export default function MyPage() {
             </tbody>
           </table>
         </div>
-        <h4 className='underLine py-4 mt-5'>
+        <h4 className='underLine py-4 mt-3 mt-md-5'>
           <FaCreditCard className='me-2' />
           판매내역조회
         </h4>
@@ -85,12 +85,12 @@ export default function MyPage() {
             </tbody>
           </table>
         </div>
-        <h4 className='underLine py-4 mt-5'>
+        <h4 className='underLine py-4 mt-3 mt-md-5'>
           <FaCreditCard className='me-2' />
           주문내역조회
         </h4>
         <div class='table-responsive-md'>
-          <table className='table align-middle table-hover text-center order_table  mb-5'>
+          <table className='table align-middle table-hover text-center order_table'>
             <colgroup>
               <col width='20%' />
               <col width='20%' />

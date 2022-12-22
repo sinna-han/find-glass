@@ -141,7 +141,7 @@ export default function Order() {
             </table>
           </div>
           <div className='text-center'>
-            <Link to='/orderView' className=' btn btn-lg bgPurple2 my-5'>
+            <Link to='/orderView' className=' btn btn-md-lg bgPurple2 my-5'>
               주문하기
             </Link>
           </div>
