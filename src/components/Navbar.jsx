@@ -15,7 +15,7 @@ export default function NavWrap() {
 
   return (
     <header data-scrollto-offset='0'>
-      <Navbar key='md' bg='dark' variant='dark' expand='md' className='mb-3'>
+      <Navbar key='md' variant='dark' expand='md' className='mb-3'>
         <Container fluid>
           <div className='logo'>
             <Link to='/'>

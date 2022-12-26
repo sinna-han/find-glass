@@ -1227,3 +1227,6 @@ footer {
   padding: 0 0 25px 0;
   border: 0;
 }
+.text-bg-dark {
+  background-color: #111111 !important;
+}
