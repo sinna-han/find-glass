@@ -1,6 +1,6 @@
 import React from "react";
 import SubTitle from "../components/SubTitle";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CardReview from "../components/CardReview";
 import "swiper/css";
@@ -17,12 +17,13 @@ export default function Cooperation() {
         <div className='container'>
           <Swiper
             // install Swiper modules
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             spaceBetween={50}
             slidesPerView={3}
             pagination={{ clickable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
+            autoplay={{ delay: 1000 }}
           >
             <div className='swiper-wrapper'>
               <SwiperSlide>

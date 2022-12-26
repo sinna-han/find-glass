@@ -839,6 +839,7 @@ footer {
   flex-direction: column;
   text-align: center;
   transition: 0.3s;
+  border-radius: 20px;
 }
 .stars {
   text-align: center;
@@ -989,7 +990,7 @@ footer {
 --------------------------------------------------------------*/
 
 .services {
-  padding: 60px 0;
+  padding: 120px 0;
   overflow: hidden;
 }
 .section-header {
@@ -1130,4 +1131,111 @@ footer {
   .counts {
     background-attachment: fixed;
   }
+}
+
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.features {
+  padding: 60px 0 0;
+  overflow: hidden;
+  position: relative;
+}
+.features-bg {
+  padding: 160px 0;
+  color: #fff;
+}
+
+.features-bg:before {
+  content: "";
+  background: #1b1b1b;
+  position: absolute;
+  bottom: 80px;
+  top: 80px;
+  left: 0;
+  right: 0;
+  transform: skewY(-3deg);
+}
+
+.features .features-item + .features-item {
+  margin-top: 100px;
+}
+
+@media (max-width: 640px) {
+  .features .features-item + .features-item {
+    margin-top: 40px;
+  }
+}
+
+.features .features-item h3 {
+  padding: 20px 0;
+  color: #520dc2;
+}
+.features-bg .features-item h3 {
+  padding: 20px 0;
+  color: #c29ffa !important;
+}
+
+.features .features-item ul {
+  list-style: none;
+  padding: 20px 0 0;
+}
+
+.features .features-item ul li {
+  font-size: 18px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+.features .features-item ul li span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+.features .features-item ul li:last-child {
+  padding-bottom: 0;
+}
+
+.features .features-item ul .icon {
+  font-size: 24px;
+  padding-right: 4px;
+  color: var(--text-color);
+}
+
+.features .features-item p:last-child {
+  margin-bottom: 0;
+}
+/*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+
+.faq {
+  padding: 0 0 60px;
+  overflow: hidden;
+}
+.faq .accordion-collapse {
+  border: 0;
+}
+
+.faq .accordion-button {
+  padding: 15px 15px 20px 0;
+  font-weight: 600;
+  border: 0;
+  font-size: 18px;
+  color: #444444;
+  text-align: left;
+}
+
+.faq .accordion-button:focus {
+  box-shadow: none;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  background: none;
+  color: var(--text-color);
+  border-bottom: 0;
+}
+
+.faq .accordion-body {
+  padding: 0 0 25px 0;
+  border: 0;
 }
