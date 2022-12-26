@@ -9,7 +9,7 @@ import brandLogo2 from "../img/renault_logo.png";
 import brandLogo3 from "../img/kia_logo.png";
 import noProduct from "../img/logo_big_only.png";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
-
+import { BsSearch } from "react-icons/bs";
 export default function Search() {
   return (
     <>
@@ -25,6 +25,12 @@ export default function Search() {
               <SelectGroup />
             </div>
           </Form>
+          <div className='text-center mt-4'>
+            <button className='btn  bgPurple2'>
+              <BsSearch className='me-2 align-content-center' />
+              검색하기
+            </button>
+          </div>
         </div>
 
         <div className='d-flex align-items-center justify-content-between m-1'>
