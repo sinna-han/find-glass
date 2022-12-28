@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import mainImg from "../img/main_v.jpg";
-import svImg1 from "../img/services-1.jpg";
+import svImg4 from "../img/services-4.jpg";
 import svImg2 from "../img/services-2.jpg";
 import svImg3 from "../img/services-3.jpg";
 import { TbSitemap, TbBusinessplan } from "react-icons/tb";
@@ -60,30 +60,6 @@ export default function Home() {
             <div
               className='col-xl-4 col-md-6'
               data-aos='zoom-in'
-              data-aos-delay='200'
-            >
-              <div className='service-item'>
-                <div className='img'>
-                  <img src={svImg1} className='img-fluid' alt='' />
-                </div>
-                <div className='details position-relative'>
-                  <div className='icon'>
-                    <TbSitemap />
-                  </div>
-                  <a href='#!' className='stretched-link'>
-                    <h3>자동차 유리 매칭 서비스</h3>
-                  </a>
-                  <p>
-                    전국적인 자동차 유리 부품 공급을 해결하고, 교체점의 오래된
-                    재고 판로가 되어드립니다.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className='col-xl-4 col-md-6'
-              data-aos='zoom-in'
               data-aos-delay='300'
             >
               <div className='service-item'>
@@ -98,9 +74,16 @@ export default function Home() {
                     <h3>자동차 보험 청구 프로그램 제공</h3>
                   </a>
                   <p>
-                    유리찾자의 회원이 되시면 자체 개발한 자동차 유리 보험
-                    청구프로그램 무상으로 제공 합니다.
+                    자체 개발한 자동차 유리 보험 청구프로그램(자동차 점검,정비
+                    견적서, 전자세금계산서등)을 무상으로 제공 합니다.
                   </p>
+                  <a
+                    href='https://ins.thekauto.co.kr/InsuranceClaim/InsuranceClaim'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    프로그램 바로가기
+                  </a>
                 </div>
               </div>
             </div>
@@ -122,9 +105,34 @@ export default function Home() {
                     <h3>교육 프로그램 제공</h3>
                   </a>
                   <p>
-                    정확하고 안전한 자동차 유리 교체 및 복원을 위한 교육
-                    프로그램을 제공합니다.
+                    정확하고 안전한 자동차 유리 교체 및 복원을 위한 제품에 따른
+                    체계적이고 선진적인 교육 프로그램을 제공합니다.
                   </p>
+                  <button>자세히보기</button>
+                </div>
+              </div>
+            </div>
+            <div
+              className='col-xl-4 col-md-6'
+              data-aos='zoom-in'
+              data-aos-delay='200'
+            >
+              <div className='service-item'>
+                <div className='img'>
+                  <img src={svImg4} className='img-fluid' alt='' />
+                </div>
+                <div className='details position-relative'>
+                  <div className='icon'>
+                    <TbSitemap />
+                  </div>
+                  <a href='#!' className='stretched-link'>
+                    <h3>자동차 유리 쇼핑몰 할인 혜택</h3>
+                  </a>
+                  <p>
+                    자사에서 운영하는 자동차 유리쇼핑몰에서 유리교체에 필요한
+                    공구, 접착제 등을 할인해서 판매합니다.
+                  </p>
+                  <button>사이트 바로가기</button>
                 </div>
               </div>
             </div>
