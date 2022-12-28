@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import logo from "../img/logo.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { BsYoutube, BsFacebook, BsInstagram } from "react-icons/bs";
 
 export default function Footer() {
   useEffect(() => {
@@ -44,9 +45,9 @@ export default function Footer() {
           <p>(18322) 경기도 화성시 봉담읍 주석로 1166-3</p>
 
           <h3>Follow</h3>
-          <i className='fa-brands fa-youtube'></i>
-          <i className='fa-brands fa-facebook-f'></i>
-          <i className='fa-brands fa-instagram'></i>
+          <BsYoutube className='ft_icon' />
+          <BsFacebook className='ft_icon' />
+          <BsInstagram className='ft_icon' />
         </div>
       </div>
     </footer>
