@@ -12,6 +12,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Home() {
+  const handleOpenNewTab = (url) => {
+    window.open(url, "_blank", "noopener, noreferrer");
+  };
   useEffect(() => {
     AOS.init({
       duration: 1500,
@@ -108,7 +111,9 @@ export default function Home() {
                     정확하고 안전한 자동차 유리 교체 및 복원을 위한 제품에 따른
                     체계적이고 선진적인 교육 프로그램을 제공합니다.
                   </p>
-                  <button>자세히보기</button>
+                  <Link to='/company' className='button btnFade bgBlack'>
+                    자세히 보기
+                  </Link>
                 </div>
               </div>
             </div>
@@ -132,7 +137,13 @@ export default function Home() {
                     자사에서 운영하는 자동차 유리쇼핑몰에서 유리교체에 필요한
                     공구, 접착제 등을 할인해서 판매합니다.
                   </p>
-                  <button>사이트 바로가기</button>
+                  <button
+                    onClick={() =>
+                      handleOpenNewTab("https://safetyglass.co.kr/")
+                    }
+                  >
+                    쇼핑몰 바로가기
+                  </button>
                 </div>
               </div>
             </div>
