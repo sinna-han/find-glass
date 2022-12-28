@@ -73,20 +73,22 @@ export default function Home() {
                   <div className='icon'>
                     <TbBusinessplan />
                   </div>
-                  <a href='#!' className='stretched-link'>
+                  <a
+                    href='#!'
+                    className='stretched-link'
+                    onClick={() =>
+                      handleOpenNewTab(
+                        "https://ins.thekauto.co.kr/InsuranceClaim/InsuranceClaim"
+                      )
+                    }
+                  >
                     <h3>자동차 보험 청구 프로그램 제공</h3>
                   </a>
                   <p>
                     자체 개발한 자동차 유리 보험 청구프로그램(자동차 점검,정비
                     견적서, 전자세금계산서등)을 무상으로 제공 합니다.
                   </p>
-                  <a
-                    href='https://ins.thekauto.co.kr/InsuranceClaim/InsuranceClaim'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    프로그램 바로가기
-                  </a>
+                  <p className='btn btn-outline-dark mt-3'>프로그램 바로가기</p>
                 </div>
               </div>
             </div>
@@ -104,16 +106,14 @@ export default function Home() {
                   <div className='icon'>
                     <GiTeacher />
                   </div>
-                  <a href='#!' className='stretched-link'>
+                  <Link to='/company' className='stretched-link'>
                     <h3>교육 프로그램 제공</h3>
-                  </a>
+                  </Link>
                   <p>
                     정확하고 안전한 자동차 유리 교체 및 복원을 위한 제품에 따른
                     체계적이고 선진적인 교육 프로그램을 제공합니다.
                   </p>
-                  <Link to='/company' className='button btnFade bgBlack'>
-                    자세히 보기
-                  </Link>
+                  <p className='btn btn-outline-dark mt-3'>자세히보기</p>
                 </div>
               </div>
             </div>
@@ -130,20 +130,20 @@ export default function Home() {
                   <div className='icon'>
                     <TbSitemap />
                   </div>
-                  <a href='#!' className='stretched-link'>
+                  <a
+                    href='#!'
+                    className='stretched-link'
+                    onClick={() =>
+                      handleOpenNewTab("https://safetyglass.co.kr/")
+                    }
+                  >
                     <h3>자동차 유리 쇼핑몰 할인 혜택</h3>
                   </a>
                   <p>
                     자사에서 운영하는 자동차 유리쇼핑몰에서 유리교체에 필요한
                     공구, 접착제 등을 할인해서 판매합니다.
                   </p>
-                  <button
-                    onClick={() =>
-                      handleOpenNewTab("https://safetyglass.co.kr/")
-                    }
-                  >
-                    쇼핑몰 바로가기
-                  </button>
+                  <p className='btn btn-outline-dark mt-3'>쇼핑몰 바로가기</p>
                 </div>
               </div>
             </div>
