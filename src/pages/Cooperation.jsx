@@ -3,6 +3,10 @@ import SubTitle from "../components/SubTitle";
 import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CardReview from "../components/CardReview";
+import crImg1 from "../img/avata1.jpg";
+import crImg2 from "../img/avata2.jpg";
+import crImg3 from "../img/avata3.jpg";
+import crImg4 from "../img/avata4.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -23,51 +27,40 @@ export default function Cooperation() {
             pagination={{ clickable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
-            autoplay={{ delay: 1000 }}
+            autoplay={{ delay: 3000 }}
           >
             <div className='swiper-wrapper'>
               <SwiperSlide>
                 <CardReview
                   contents='자동차 유리 교체 안전 교육을 이수한 우수 협력점
-                    에스에이 글라스 서울 북부점 입니다. 유리교체 뿐만아니라
-                    언더코팅 등 최상의 서비스가 가능합니다. 이런 식의 설명이
-                    들어갑니다.'
-                  imgUrl='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
-                  Name='홍길동 대표'
+                    에스에이 글라스 서울 북부점 입니다. 유리찾자를 통해 전문적인 유리교체 방법을 배울 수 있었습니다. 체계적인 매장운용에 도움이 될 것 같습니다. 앞으로도 유리찾자와 쭈욱~ 함께 하고 싶습니다.'
+                  imgUrl={crImg1}
+                  Name='김영일 대표'
                   area='에스에이 글라스 서울 북부'
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <CardReview
-                  contents='자동차 유리 교체 안전 교육을 이수한 우수 협력점
-                    에스에이 글라스 서울 북부점 입니다. 유리교체 뿐만아니라
-                    언더코팅 등 최상의 서비스가 가능합니다. 이런 식의 설명이
-                    들어갑니다.'
-                  imgUrl='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
-                  Name='홍길동 대표'
-                  area='에스에이 글라스 서울 북부'
+                  contents='유리찾자에서 제공하는 전문적인 유리관련 교육에 많은 도움을 받았습니다. 유리교체에 필요한 소모품들도 저렴한 가격에 공급받을 수 있어서 여러모로 도움이 되네요. 항상 친절하고 디테일하게 알려주셔서 감사합니다.'
+                  imgUrl={crImg2}
+                  Name='박수만 대표'
+                  area='에스에이 글라스 화성 남양'
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <CardReview
-                  contents='자동차 유리 교체 안전 교육을 이수한 우수 협력점
-                    에스에이 글라스 서울 북부점 입니다. 유리교체 뿐만아니라
-                    언더코팅 등 최상의 서비스가 가능합니다. 이런 식의 설명이
-                    들어갑니다.'
-                  imgUrl='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
-                  Name='홍길동 대표'
-                  area='에스에이 글라스 서울 북부'
+                  contents='자동차 유리교체에 대해 디테일하게 교육해주셔서 도움이 되었습니다. 협력점에게 무상으로 제공되는 보험청구프로그램도 업무효율을 높여줘서 만족스럽습니다. 진작 이런 시스템이 있었으면 좋았겠지만 이제라도 알게되어 다행입니다.'
+                  imgUrl={crImg3}
+                  Name='이재천 대표'
+                  area='에스에이 글라스 용인 수지 '
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <CardReview
-                  contents='자동차 유리 교체 안전 교육을 이수한 우수 협력점
-                    에스에이 글라스 서울 북부점 입니다. 유리교체 뿐만아니라
-                    언더코팅 등 최상의 서비스가 가능합니다. 이런 식의 설명이
-                    들어갑니다.'
-                  imgUrl='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
-                  Name='홍길동 대표'
-                  area='에스에이 글라스 서울 북부'
+                  contents='전문적인 교육과 더불어 보험청구프로그램까지 무료로 제공되니 협력점 되길 잘했다 싶습니다. 구하기 어려운 예전 차종유리를 예전보다 쉽게 구할 수 있을것 같아 기대가 됩니다. '
+                  imgUrl={crImg4}
+                  Name='최태수 대표'
+                  area='에스에이 글라스 인천 '
                 />
               </SwiperSlide>
             </div>

@@ -221,8 +221,9 @@ export default function Home() {
                     자동차 유리 교체, 복원 및 틴팅 교육은 어디서 받나요?
                   </Accordion.Header>
                   <Accordion.Body>
-                    자동차 유리 교체, 복원 및 틴팅 교육에 대한 자세한 설명을
-                    입력해주세요.
+                    연 2회 진행되는 교육은 유리찾자 본점에서 진행합니다. 그 외에
+                    추가로 진행되는 교육은 교육의 성격에 따라 진행되는 장소가
+                    변경될 예정입니다. 이 부분은 추후 공지하도록 하겠습니다.
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
@@ -257,11 +258,12 @@ export default function Home() {
                 </Accordion.Item>
                 <Accordion.Item eventKey='2'>
                   <Accordion.Header>
-                    자동차 유리 교체, 복원 및 틴팅 교육은 어디서 받나요?
+                    주문 후 배송까지 얼마나 걸리나요?
                   </Accordion.Header>
                   <Accordion.Body>
-                    자동차 유리 교체, 복원 및 틴팅 교육에 대한 자세한 설명을
-                    입력해주세요.
+                    주문 후 3일 이내로 받아 보실 수 있습니다. 주문 후
+                    지역전문가가 판매자의 유리를 검수하고 배송까지 하는 시간이
+                    필요하기 때문입니다.
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
